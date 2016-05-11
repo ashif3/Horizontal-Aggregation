@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="storeuser.master.cs" Inherits="storeuser" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div style="width: 810px; overflow: auto;">
+        <div style="border-right: thin #666666 solid; width: 190px; height:auto; min-height:500px; float: left; padding-right: 10px">
+
+            <div style="border-bottom: thin #666666 solid; margin-left: 8px; width: auto; background-color: #265571; color: white; text-align: center; font-family: 'Lucida Sans'; font-size: 16px; height: 25px; padding-top: 5px; margin-bottom:20px;">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </div>
+
+            <div style="margin-left: 10px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin;">
+                <asp:ImageButton ID="storehome" runat="server" ImageUrl="~/img/homebutton.jpg" Width="114px" Height="30px" OnClick="storehome_Click" />
+            </div>
+
+            <div style="margin-left: 10px; margin-top:5px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin;">
+                <asp:ImageButton ID="addsell" runat="server" ImageUrl="~/img/addamt.png" Width="162px" Height="30px" OnClick="addsell_Click"/>
+            </div>
+
+            <div style="margin-left: 14px; margin-top:5px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin;">
+                <asp:ImageButton ID="details" runat="server" ImageUrl="~/img/details.png" Width="109px" Height="25px" OnClick="details_Click"/>
+            </div>
+
+            <div style="margin-left: 12px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin; margin-top:5px">
+                <asp:ImageButton ID="storeprofile" runat="server" ImageUrl="~/img/prfilestore.png" Width="115px" Height="25px" OnClick="storeprofile_Click" />
+            </div>
+
+            <div style="margin-left: 12px; margin-top:5px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin;">
+                <asp:ImageButton ID="storechangepassword" runat="server" ImageUrl="~/img/changepassword.png" Width="160px" Height="28px" OnClick="storechangepassword_Click" />
+
+            </div>
+
+            <div style="margin-left: 13px; margin-top:2px; width: auto; height: auto; border-bottom-color: #666666; border-bottom-style: solid; border-bottom-width: thin;">
+                <asp:ImageButton ID="storelogout" runat="server" ImageUrl="~/img/userlogout.png" Width="114px" Height="30px" OnClick="storelogout_Click" />
+
+            </div>
+
+        </div>
+
+
+        <div style="width: 600px; height:auto; min-height:400px; float: right">
+            <div style="margin: 10px 10px 10px 10px; height:auto; min-height:400px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+</asp:Content>
+

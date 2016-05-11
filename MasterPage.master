@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body runat="server" style="background-image: url('/PROJECT/img/bg.jpg'); padding-top: 10px; font-family: 'Lucida Bright'; color: #333;">
+    <form id="form1" runat="server">
+        <div style="border: thick #666666 outset; width: 850px; margin: 0 auto; background-color: #fff; height: auto;">
+            <div style="width: 830px; height: 130px; margin: 0 auto; background-color: #fff;">
+                <div style="width: 145px; height: 120px; margin-left: 15px; float: left;">
+                    <asp:Image ID="Image1" runat="server" Height="130px" ImageUrl="~/img/logo.png" Width="150px" />
+                </div>
+                <div style="width: 650px; height: 120px; background-color: white; float: left; margin-top: 10px;">
+                    <h1>Horizontal Aggregation In Sql by using K-Means Clustering</h1>
+
+                </div>
+            </div>
+            <hr style="height: 5px; background-color: #666; width: 93%" />
+            <div style="margin: 20px 20px 20px 20px; min-height: 400px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: #666666; color: #FFFFFF; height: 30px; padding-top: 10px; padding-left: 20px;">
+                <spam>Projet Designed By: Ashif Ali, Ritesh Ranjan</spam>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

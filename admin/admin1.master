@@ -1,0 +1,33 @@
+﻿<%--
+    /PROJECT/admin/admin.master.aspx
+--%>
+
+<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="admin1.master.cs" Inherits="admin_admin1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style type="text/css">
+        .MenuItem {
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div>
+        <div style="height: 30px; margin-left: 7px;">
+            <asp:Menu ID="MainMenu" runat="server" StaticMenuItemStyle-CssClass="MenuItem" Font-Size="20px" ForeColor="#E4E4E4" Orientation="Horizontal" StaticDisplayLevels="2" DataSourceID="SiteMapDataSource1">
+                <DynamicHoverStyle BackColor="Silver" />
+                <DynamicMenuItemStyle BackColor="#C7C7C7" />
+                <DynamicSelectedStyle BackColor="#274F76" />
+                <StaticHoverStyle BackColor="#274F76" />
+                <StaticMenuItemStyle BackColor="#336699" ForeColor="White" HorizontalPadding="14px" />
+                <StaticSelectedStyle BackColor="#274F76" ForeColor="White" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+        <div style="min-height: 400px; margin-top: 10px; margin-bottom: 20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
